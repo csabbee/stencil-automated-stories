@@ -23,7 +23,6 @@ module.exports = {
       use: 'raw-loader',
     });
     config.resolve.extensions.push('.stories.tsx');
-    config.resolve.a
     config.resolve.alias = {
       src: path.resolve(__dirname, '../dist/collection'),
     };
