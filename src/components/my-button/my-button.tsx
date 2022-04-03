@@ -23,7 +23,7 @@ export class MyButton {
           })}
           disabled={this.disabled}
         >
-          <slot>Default</slot>
+          <slot></slot>
         </button>
       </Host>
     );

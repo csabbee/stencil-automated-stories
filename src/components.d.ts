@@ -5,12 +5,13 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Color, Shape } from "./components/globals";
 export namespace Components {
     interface MyButton {
-        "color"?: 'primary' | 'secondary';
+        "color"?: Color;
         "disabled"?: boolean;
         "elevation"?: boolean;
-        "shape"?: 'full' | 'round' | 'smooth';
+        "shape"?: Shape;
         "size"?: 'large' | 'medium' | 'small';
     }
 }
@@ -27,10 +28,10 @@ declare global {
 }
 declare namespace LocalJSX {
     interface MyButton {
-        "color"?: 'primary' | 'secondary';
+        "color"?: Color;
         "disabled"?: boolean;
         "elevation"?: boolean;
-        "shape"?: 'full' | 'round' | 'smooth';
+        "shape"?: Shape;
         "size"?: 'large' | 'medium' | 'small';
     }
     interface IntrinsicElements {
